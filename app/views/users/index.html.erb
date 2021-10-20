@@ -1,0 +1,17 @@
+<h1>Trang này được kế thừa từ application.html.erb</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Action</th>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+        <td><a href="/users/<%=user.id%>"><%= user.name %></a></td>
+      <td><%= user.age %></td>
+      <td></td>
+    </tr>
+
+  <% end %>
+</table>
